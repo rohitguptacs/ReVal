@@ -1,5 +1,5 @@
 #######################################################
-ReVal: A Simple and Effective Machine Translation Evaluation Metric Based on Recurrent Neural Networks
+#ReVal: A Simple and Effective Machine Translation Evaluation Metric Based on Recurrent Neural Networks
 #######################################################
 
 Please refer to the following [paper](http://pers-www.wlv.ac.uk/~in4089/publications/2015/guptaemnlp2015.pdf) for details about this metric and the generation of training data:
@@ -7,11 +7,11 @@ Rohit Gupta, Constantin Orasan, and Josef van Genabith. 2015. [ReVal: A Simple a
 
 This code is available at [GitHub](https://github.com/rohitguptacs/ReVal).
 
-The TreeStructured-LSTM code used in this metric implementation is obtained from https://github.com/stanfordnlp/treelstm.[Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks](http://arxiv.org/abs/1503.00075) by Kai Sheng Tai, Richard Socher, and Christopher Manning.
+The TreeStructured-LSTM code used in this metric implementation is obtained from [here] (https://github.com/stanfordnlp/treelstm). [Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks](http://arxiv.org/abs/1503.00075) by Kai Sheng Tai, Richard Socher, and Christopher Manning.
 
 
-#####################Installation and Running###################################
-## Software Requirements:
+#Installation and Running
+### Software Requirements:
 - Java >= 8 (for Stanford CoreNLP utilities)
 - Python >= 2.7
 If you do not have lua you need to install [lua](http://www.lua.org/download.html) and [luarocks](https://luarocks.org/#quick-start) first and install the following: 
@@ -27,7 +27,7 @@ For example:
 luarocks install nngraph
 ```
 
-## Running the meric
+### Running the meric
 
 First download the required data and libraries by running the following script:
 
