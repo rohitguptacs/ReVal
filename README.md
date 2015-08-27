@@ -53,7 +53,7 @@ replace sample_reference.txt and sample_translation.txt with your reference and 
 
 ## Training the metric
 
-For training the metric you need to [download the training data](https://www.dropbox.com/s/wk10mhajytf1uj1/WMT13SetL.zip?dl=0). If you plan to replicate all the resluts given in [paper](http://pers-www.wlv.ac.uk/~in4089/publications/2015/guptaemnlp2015.pdf) you will also need [SICK](http://alt.qcri.org/semeval2014/task1/data/uploads/sick_train.zip) data.
+For training the metric you need to [download the training data](https://www.dropbox.com/s/wk10mhajytf1uj1/WMT13SetL.zip?dl=0). If you plan to replicate all the resluts given in the [paper](http://pers-www.wlv.ac.uk/~in4089/publications/2015/guptaemnlp2015.pdf) you will also need [SICK](http://alt.qcri.org/semeval2014/task1/data/uploads/sick_train.zip) data.
 
 Preprocess (use -h for help) and train using:
 ``` 
