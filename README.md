@@ -14,6 +14,7 @@ The TreeStructured-LSTM code used in this metric implementation is obtained from
 ### Software Requirements:
 - Java >= 8 (for Stanford CoreNLP utilities)
 - Python >= 2.7
+
 If you do not have lua you need to install [lua](http://www.lua.org/download.html) and [luarocks](https://luarocks.org/#quick-start) first and install the following: 
 - [Torch7](https://github.com/torch/torch7)
 - [penlight](https://github.com/stevedonovan/Penlight)
