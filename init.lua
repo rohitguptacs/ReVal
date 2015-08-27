@@ -1,3 +1,25 @@
+--[[
+/**************************************************************************
+ ReVal - A Simple and Effective Machine Translation Evaluation Metric Based on Recurrent Neural Networks.
+
+ Copyright (C) 2014 Rohit Gupta, University of Wolverhampton
+
+ This file is part of ReVal and is a modified version of the code distributed at https://github.com/stanfordnlp/treelstm.
+
+ ReVal is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ ReVal is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ **************************************************************************/
+--]]
 require('torch')
 require('nn')
 require('nngraph')
@@ -21,8 +43,8 @@ include('relatedness/TreeLSTMSim.lua')
 printf = utils.printf
 
 -- global paths (modify if desired)
-treelstm.data_dir        = 'wmtsimdata'
-treelstm.models_dir      = 'trained_models'
+treelstm.data_dir        = 'training'
+treelstm.models_dir      = 'new_trained_models'
 treelstm.predictions_dir = 'results'
 
 -- share parameters of nngraph gModule instances

@@ -1,3 +1,24 @@
+--[[/**************************************************************************
+ ReVal - A Simple and Effective Machine Translation Evaluation Metric Based on Recurrent Neural Networks.
+
+ Copyright (C) 2014 Rohit Gupta, University of Wolverhampton
+
+ This file is part of ReVal and is a modified version of the code distributed at https://github.com/stanfordnlp/treelstm.
+
+ ReVal is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ ReVal is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ **************************************************************************/
+--]]
 --[[
 
   Semantic relatedness prediction using LSTMs.
@@ -296,7 +317,6 @@ end
 function LSTMSim:save(path)
   local config = {
     batch_size    = self.batch_size,
-    --emb_vecs      = self.emb_vecs:float(),
     learning_rate = self.learning_rate,
     num_layers    = self.num_layers,
     mem_dim       = self.mem_dim,

@@ -1,6 +1,6 @@
 .DS_Store
-data
-predictions
-trained_models
+glove
+tmp
+new_trained_models
 *~
 #*#
