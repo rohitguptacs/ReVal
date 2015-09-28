@@ -26,7 +26,7 @@
 --]]
 
 require('.')
-
+local utf8=require 'lua-utf8' 
 -- Pearson correlation
 function pearson(x, y)
   x = x - x:mean()
@@ -63,6 +63,11 @@ for i = 1, testvocab.size do
   if emb_vocab:contains(w) then
     vecs[i] = emb_vecs[emb_vocab:index(w)]
   else
+    mseed=''
+    for pos, code in utf8.next, w do
+      mseed=mseed .. code
+    end
+    torch.manualSeed(mseed)
     num_unk = num_unk + 1
     vecs[i]:uniform(-0.05, 0.05)
   end
