@@ -21,6 +21,7 @@ If you do not have lua you need to install [lua](http://www.lua.org/download.htm
 - [nn](https://github.com/torch/nn)
 - [nngraph](https://github.com/torch/nngraph)
 - [optim](https://github.com/torch/optim)
+- [luautf8](https://github.com/starwing/luautf8)
 by using [luarocks](https://luarocks.org/#quick-start)
 
 ```
