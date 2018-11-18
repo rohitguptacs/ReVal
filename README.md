@@ -1,5 +1,5 @@
 # ######################################################
-#ReVal: A Simple and Effective Machine Translation Evaluation Metric Based on Recurrent Neural Networks
+# ReVal: A Simple and Effective Machine Translation Evaluation Metric Based on Recurrent Neural Networks
 # ######################################################
 
 Please refer to the following [paper](http://pers-www.wlv.ac.uk/~in4089/publications/2015/guptaemnlp2015.pdf) for details about this metric and the generation of training data:
