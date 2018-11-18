@@ -7,8 +7,8 @@ Rohit Gupta, Constantin Orasan, and Josef van Genabith. 2015. [ReVal: A Simple a
 
 This code is available at [GitHub](https://github.com/rohitguptacs/ReVal).
 
-The TreeStructured-LSTM code used in this metric implementation is obtained from [here](https://github.com/stanfordnlp/treelstm). 
-[Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks](http://arxiv.org/abs/1503.00075) by Kai Sheng Tai, Richard Socher, and Christopher Manning.
+The TreeStructured-LSTM code used in this metric implementation is obtained from  
+[Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks](https://github.com/stanfordnlp/treelstm) by Kai Sheng Tai, Richard Socher, and Christopher Manning.
 
 
 # Installation and Running
