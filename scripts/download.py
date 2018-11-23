@@ -78,17 +78,24 @@ def download_parser(dirpath):
 def download_wordvecs(dirpath):
     if os.path.exists(dirpath):
         print('Found Glove vectors - skip')
-        return
+        #return
     else:
         os.makedirs(dirpath)
-    url = 'http://www-nlp.stanford.edu/data/glove.840B.300d.txt.gz'
+    #url = 'http://www-nlp.stanford.edu/data/glove.840B.300d.txt.gz'
+    url = 'https://nlp.stanford.edu/data/glove.840B.300d.zip'
     filepath = download(url, dirpath)
-    print('extracting ' + filepath)
-    with gzip.open(filepath, 'rb') as gf:
-        with open(filepath[:-3], 'w') as f:
-            for line in gf:
-                f.write(line)
+    zip_dir = ''
+    with zipfile.ZipFile(filepath) as zf:
+        zip_dir = zf.namelist()[0]
+        zf.extractall(dirpath)
     os.remove(filepath)
+    #os.rename(os.path.join(dirpath, zip_dir), os.path.join(dirpath, parser_dir))
+    #print('extracting ' + filepath)
+    #with gzip.open(filepath, 'rb') as gf:
+    #    with open(filepath[:-3], 'w') as f:
+    #        for line in gf:
+    #            f.write(line)
+    #os.remove(filepath)
 
 if __name__ == '__main__':
     base_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
@@ -101,6 +108,6 @@ if __name__ == '__main__':
     lib_dir = os.path.join(base_dir, 'lib')
 
     # download dependencies
-    download_tagger(lib_dir)
-    download_parser(lib_dir)
+    #download_tagger(lib_dir)
+    #download_parser(lib_dir)
     download_wordvecs(wordvec_dir)
